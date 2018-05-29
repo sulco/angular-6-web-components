@@ -19,7 +19,6 @@ import {
     }
   `
   ],
-  encapsulation: ViewEncapsulation.Native
 })
 export class ButtonComponent {
   @Input() label = 'default label';
