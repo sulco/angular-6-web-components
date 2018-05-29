@@ -11,11 +11,11 @@
   <custom-button label="First Value"></custom-button>
 
   <script>
-    const button = document.querySelector('custom-button');
-    button.addEventListener('action', (event) => {
-      console.log(`"action" emitted: ${event.detail}`);
+    var button = document.querySelector('custom-button');
+    button.addEventListener('action', function (event) {
+      console.log("action emitted:", event.detail);
     })
-    setTimeout(() => button.label = 'Second Value', 3000);
+    setTimeout(function () { button.label = 'Second Value', 3000; });
 
   </script>
 </body>
